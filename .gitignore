@@ -205,3 +205,31 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# === Custom exclusions for CI/CD project ===
+
+# Exclude these folders and files
+.vscode/
+.ebextensions/
+catboost_info/
+logs/
+mlenv/
+mlproject.egg-info/
+Procfile
+
+# Ignore everything else by default
+/*
+
+# But include these specific folders and files
+!.github/
+!artifacts/
+!notebook/
+!src/
+!templates/
+!Dockerfile
+!requirements.txt
+!application.py
+!.gitignore
+!README.md
+!setup.py
